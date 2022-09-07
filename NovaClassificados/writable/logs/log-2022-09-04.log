@@ -1,0 +1,168 @@
+CRITICAL - 2022-09-04 13:07:35 --> Unknown named parameter $showBtnArchive
+in APPPATH\Controllers\Manager\AdvertsManagerController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:11:59 --> Unknown named parameter $showBtnArchive
+in APPPATH\Controllers\Manager\AdvertsManagerController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:12:11 --> Unknown named parameter $showBtnArchive
+in APPPATH\Controllers\Manager\AdvertsManagerController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:23:47 --> Unknown named parameter $class
+in APPPATH\Services\AdvertService.php on line 172.
+ 1 APPPATH\Controllers\Manager\AdvertsManagerController.php(33): App\Services\AdvertService->getAllAdverts(false, true, false, 'btn btn-sm btn-outline-primary')
+ 2 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:27:37 --> Unknown named parameter $class
+in APPPATH\Services\AdvertService.php on line 172.
+ 1 APPPATH\Controllers\Manager\AdvertsManagerController.php(33): App\Services\AdvertService->getAllAdverts(false, true, false, 'btn btn-sm btn-outline-primary')
+ 2 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:27:46 --> Unknown named parameter $class
+in APPPATH\Services\AdvertService.php on line 172.
+ 1 APPPATH\Controllers\Manager\AdvertsManagerController.php(33): App\Services\AdvertService->getAllAdverts(false, true, false, 'btn btn-sm btn-outline-primary')
+ 2 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:33:31 --> Unknown named parameter $class
+in APPPATH\Controllers\Manager\AdvertsManagerController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->getAllAdverts()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:38:46 --> syntax error, unexpected token "class"
+in APPPATH\Services\AdvertService.php on line 172.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Services\\AdvertService.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Services\\AdvertService')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Services\\AdvertService')
+ 4 SYSTEMPATH\Config\Factories.php(157): class_exists('App\\Services\\AdvertService')
+ 5 SYSTEMPATH\Config\Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Services\\AdvertService')
+ 6 APPPATH\Controllers\Manager\AdvertsManagerController.php(15): CodeIgniter\Config\Factories::__callStatic('class', [])
+ 7 SYSTEMPATH\CodeIgniter.php(856): App\Controllers\Manager\AdvertsManagerController->__construct()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 13:40:20 --> Array and string offset access syntax with curly braces is no longer supported
+in APPPATH\Services\AdvertService.php on line 169.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-04 14:37:23 --> syntax error, unexpected single-quoted string "btn_all_archived_plans", expecting "]"
+in APPPATH\Language\pt-BR\App.php on line 29.
+ 1 SYSTEMPATH\Language\Language.php(223): CodeIgniter\Language\Language->requireFile('Language/pt-BR/App.php')
+ 2 SYSTEMPATH\Language\Language.php(164): CodeIgniter\Language\Language->load('App', 'pt-BR')
+ 3 SYSTEMPATH\Language\Language.php(99): CodeIgniter\Language\Language->parseLine('btn_all_archived', 'pt-BR')
+ 4 SYSTEMPATH\Common.php(754): CodeIgniter\Language\Language->getLine('App.btn_all_archived', [])
+ 5 APPPATH\Views\Manager\Adverts\index.php(60): lang('App.btn_all_archived')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1136): CodeIgniter\View\View->render('Manager/Adverts/index', [], true)
+ 9 APPPATH\Controllers\Manager\AdvertsManagerController.php(21): view('Manager/Adverts/index')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 18:40:06 --> A ação que você requisitou não é permitida.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('pt-BR/manager/adverts/update', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 18:40:14 --> A ação que você requisitou não é permitida.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('pt-BR/manager/adverts/update', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:05:24 --> Undefined variable $is_published
+in APPPATH\Views\Manager\Adverts\_modal_advert.php on line 103.
+ 1 APPPATH\Views\Manager\Adverts\_modal_advert.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $is_published', 'APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('Manager/Adverts/_modal_advert', null, true)
+ 5 APPPATH\Views\Manager\Adverts\index.php(89): CodeIgniter\View\View->include('Manager/Adverts/_modal_advert')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1136): CodeIgniter\View\View->render('Manager/Adverts/index', [], true)
+ 9 APPPATH\Controllers\Manager\AdvertsManagerController.php(25): view('Manager/Adverts/index')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:05:42 --> Undefined variable $advert
+in APPPATH\Views\Manager\Adverts\_modal_advert.php on line 103.
+ 1 APPPATH\Views\Manager\Adverts\_modal_advert.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $advert', 'APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('Manager/Adverts/_modal_advert', null, true)
+ 5 APPPATH\Views\Manager\Adverts\index.php(89): CodeIgniter\View\View->include('Manager/Adverts/_modal_advert')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1136): CodeIgniter\View\View->render('Manager/Adverts/index', [], true)
+ 9 APPPATH\Controllers\Manager\AdvertsManagerController.php(25): view('Manager/Adverts/index')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:06:46 --> Undefined variable $advert
+in APPPATH\Views\Manager\Adverts\_modal_advert.php on line 103.
+ 1 APPPATH\Views\Manager\Adverts\_modal_advert.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $advert', 'APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('Manager/Adverts/_modal_advert', null, true)
+ 5 APPPATH\Views\Manager\Adverts\index.php(89): CodeIgniter\View\View->include('Manager/Adverts/_modal_advert')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1136): CodeIgniter\View\View->render('Manager/Adverts/index', [], true)
+ 9 APPPATH\Controllers\Manager\AdvertsManagerController.php(25): view('Manager/Adverts/index')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:14:32 --> Undefined variable $advert
+in APPPATH\Views\Manager\Adverts\_modal_advert.php on line 103.
+ 1 APPPATH\Views\Manager\Adverts\_modal_advert.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $advert', 'APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php', 103)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\_modal_advert.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('Manager/Adverts/_modal_advert', null, true)
+ 5 APPPATH\Views\Manager\Adverts\index.php(89): CodeIgniter\View\View->include('Manager/Adverts/_modal_advert')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Manager\\Adverts\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1136): CodeIgniter\View\View->render('Manager/Adverts/index', [], true)
+ 9 APPPATH\Controllers\Manager\AdvertsManagerController.php(25): view('Manager/Adverts/index')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\Manager\AdvertsManagerController->index()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Manager\AdvertsManagerController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:22:55 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Manager\AdvertsManagerController.php on line 66.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Manager\\AdvertsManagerController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Manager\\AdvertsManagerController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Manager\\AdvertsManagerController')
+ 4 SYSTEMPATH\CodeIgniter.php(844): class_exists('\\App\\Controllers\\Manager\\AdvertsManagerController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 20:54:17 --> A ação que você requisitou não é permitida.
+in SYSTEMPATH\Security\Security.php on line 286.
+ 1 SYSTEMPATH\Security\Security.php(286): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(54): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('pt-BR/manager/adverts/update-manager-advert', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

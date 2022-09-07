@@ -1,0 +1,866 @@
+CRITICAL - 2022-09-07 10:45:39 --> Call to undefined function App\Controllers\getGet()
+in APPPATH\Controllers\HomeController.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 10:46:15 --> Call to undefined function App\Controllers\getGet()
+in APPPATH\Controllers\HomeController.php on line 195.
+ 1 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 2 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:27:30 --> Cannot use App\Models\AdvertModel as AdvertModel because the name is already in use
+in APPPATH\Services\AdvertService.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-07 11:29:06 --> Undefined property: App\Services\AdvertService::$AdvertModel
+in APPPATH\Services\AdvertService.php on line 806.
+ 1 APPPATH\Services\AdvertService.php(806): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Services\\AdvertService::$AdvertModel', 'APPPATH\\Services\\AdvertService.php', 806)
+ 2 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+ 3 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:29:07 --> Undefined property: App\Services\AdvertService::$AdvertModel
+in APPPATH\Services\AdvertService.php on line 806.
+ 1 APPPATH\Services\AdvertService.php(806): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Services\\AdvertService::$AdvertModel', 'APPPATH\\Services\\AdvertService.php', 806)
+ 2 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camisa')
+ 3 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:29:39 --> Undefined property: App\Services\AdvertService::$AdvertModel
+in APPPATH\Services\AdvertService.php on line 806.
+ 1 APPPATH\Services\AdvertService.php(806): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Services\\AdvertService::$AdvertModel', 'APPPATH\\Services\\AdvertService.php', 806)
+ 2 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+ 3 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:30:48 --> Cannot use App\Models\AdvertModel as AdvertModel because the name is already in use
+in APPPATH\Services\AdvertService.php on line 11.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-07 11:31:24 --> Undefined variable $builder
+in APPPATH\Models\AdvertModel.php on line 555.
+ 1 APPPATH\Models\AdvertModel.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Models\\AdvertModel.php', 555)
+ 2 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('cami')
+ 3 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:33:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%cami%' ESCAPE '!'
+AND `adverts`.`deleted_a...' at line 3 in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `advert`...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `advert`...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `advert`...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `advert`...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('cami')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:33:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%cami%' ESCAPE '!'
+AND `adverts`.`deleted_a...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `advert`.`id`, `advert`.`code`, `advert`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `advert`.`id`, `advert`.`code`, `advert`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `advert`.`id`, `advert`.`code`, `advert`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `advert`.`id`, `advert`.`code`, `advert`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('cami')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:34:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted_...' at line 3 in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:34:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted_...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `advert_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:35:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted_...' at line 3 in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:35:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted_...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:35:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%cami%' ESCAPE '!'
+AND `adverts`.`deleted_a...' at line 3 in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('cami')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:35:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`advert_id`)
+WHERE `title` LIKE '%cami%' ESCAPE '!'
+AND `adverts`.`deleted_a...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE \'%cami%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`advert_id`)
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('cami')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('cami')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:37:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`adverts_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted...' at line 3 in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:37:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.`adverts_id`)
+WHERE `title` LIKE '%camis%' ESCAPE '!'
+AND `adverts`.`deleted...' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`adverts_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`adverts_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`adverts_id`)
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` USING (`adverts_images`.`adverts_id`)
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-07 11:37:55 --> mysqli_sql_exception: Unknown column 'adverts_images.advert_id' in 'on clause' in C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\NovaClassificados\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts...', 0)
+#1 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts...')
+#2 C:\xampp\htdocs\NovaClassificados\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts...')
+#3 C:\xampp\htdocs\NovaClassificados\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts...', Array, false)
+#4 C:\xampp\htdocs\NovaClassificados\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\NovaClassificados\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\NovaClassificados\app\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\NovaClassificados\app\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+#8 C:\xampp\htdocs\NovaClassificados\app\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+#9 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(894): App\Controllers\HomeController->search()
+#10 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\NovaClassificados\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\NovaClassificados\public\index.php(55): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-07 11:37:55 --> Unknown column 'adverts_images.advert_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` ON `adverts_images`.`advert_id`=`adverts`.`id`
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` ON `adverts_images`.`advert_id`=`adverts`.`id`
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` ON `adverts_images`.`advert_id`=`adverts`.`id`
+WHERE `title` LIKE \'%camis%\' ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `adverts`.`id`, `adverts`.`code`, `adverts`.`title`, `adverts_images`.`image` AS `images`
+FROM `adverts`
+LEFT JOIN `adverts_images` ON `adverts_images`.`advert_id`=`adverts`.`id`
+WHERE `title` LIKE :title: ESCAPE \'!\'
+AND `adverts`.`deleted_at` IS NULL
+GROUP BY `adverts`.`id`
+ORDER BY `adverts`.`id` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AdvertModel.php(562): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Services\AdvertService.php(806): App\Models\AdvertModel->getAllAdvertByTerm('camis')
+ 9 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+10 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+11 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:38:44 --> print_r() expects at least 1 argument, 0 given
+in APPPATH\Services\AdvertService.php on line 811.
+ 1 APPPATH\Services\AdvertService.php(811): print_r()
+ 2 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camis')
+ 3 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 11:38:46 --> print_r() expects at least 1 argument, 0 given
+in APPPATH\Services\AdvertService.php on line 811.
+ 1 APPPATH\Services\AdvertService.php(811): print_r()
+ 2 APPPATH\Controllers\HomeController.php(194): App\Services\AdvertService->getAllAdvertByTerm('camisa')
+ 3 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\HomeController->search()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 16:58:59 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 16:59:28 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:01:07 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:04:14 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:04:38 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:07:12 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:09:46 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:15:34 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:21:42 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:28:29 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 APPPATH\Filters\AuthFilter.php(59): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Filters\AuthFilter.php(30): App\Filters\AuthFilter->authenticate(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 5 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('jwt/login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:29:42 --> Auth guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 302.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(246): Fluent\Auth\AuthManager->getConfig('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 3 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 4 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 5 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:30:13 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:46:06 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:56:51 --> syntax error, unexpected token "{"
+in APPPATH\Entities\User.php on line 29.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Entities\\User.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Entities\\User')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Entities\\User')
+ 4 SYSTEMPATH\Config\Factories.php(157): class_exists('App\\Entities\\User')
+ 5 SYSTEMPATH\Config\Factories.php(122): CodeIgniter\Config\Factories::locateClass([...], 'App\\Entities\\User')
+ 6 APPPATH\Services\AdvertService.php(29): CodeIgniter\Config\Factories::__callStatic('class', [])
+ 7 SYSTEMPATH\Config\Factories.php(126): App\Services\AdvertService->__construct()
+ 8 APPPATH\Controllers\HomeController.php(31): CodeIgniter\Config\Factories::__callStatic('class', [])
+ 9 SYSTEMPATH\CodeIgniter.php(856): App\Controllers\HomeController->__construct()
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:58:30 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 17:59:29 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:01:37 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:02:07 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:05:13 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:15:50 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:16:39 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:19:32 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:27:58 --> Auth driver [jwt] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:30:59 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:33:41 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:38:39 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:38:44 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:42:25 --> Auth guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 302.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(246): Fluent\Auth\AuthManager->getConfig('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 3 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 4 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 5 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:42:49 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:43:15 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:43:22 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:47:31 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:54:33 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:54:39 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:56:23 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 18:58:08 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:03:36 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:04:19 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:06:49 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:12:06 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:14:31 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:31:12 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:35:39 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 APPPATH\Filters\AuthFilter.php(59): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Filters\AuthFilter.php(30): App\Filters\AuthFilter->authenticate(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 5 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('api/logout', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:35:52 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 APPPATH\Filters\AuthFilter.php(59): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Filters\AuthFilter.php(30): App\Filters\AuthFilter->authenticate(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 5 SYSTEMPATH\CodeIgniter.php(440): CodeIgniter\Filters\Filters->run('api/logout', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:38:19 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(81): auth('api')
+ 4 APPPATH\Controllers\API\V1\JwtauthController.php(34): App\Controllers\API\V1\JwtauthController->respondWithToken(true)
+ 5 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:39:07 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:39:11 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:51:44 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-07 19:51:52 --> Auth driver [Fluent\JWTAuth\JWTGuard] for guard [api] is not defined.
+in VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php on line 258.
+ 1 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\AuthManager.php(79): Fluent\Auth\AuthManager->resolve('api')
+ 2 VENDORPATH\agungsugiarto\codeigniter4-authentication\src\Helpers\auth_helper.php(20): Fluent\Auth\AuthManager->guard('api')
+ 3 APPPATH\Controllers\API\V1\JwtauthController.php(29): auth('api')
+ 4 SYSTEMPATH\CodeIgniter.php(894): App\Controllers\API\V1\JwtauthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\API\V1\JwtauthController))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
